@@ -1,0 +1,77 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.content-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333; /* Hintergrundfarbe */
+    padding: 15px;
+}
+.content-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 1px;
+    transition: all 0.1s ease;
+}
+.content-nav a:hover {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+.content-nav a:active {
+    background-color: white;
+    color: grey;
+    border-color: grey;
+    transform: scale(0.96);
+}
+.profile-picture {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Space between the images */
+    width: 140px; /* Adjust size as needed */
+    height: 140px; /* Match width for a perfect circle */
+    border-radius: 10%; /* Makes the image circular */
+    border: 1.5px solid #2d2d2d; /* Optional border for emphasis */
+    object-fit: cover; /* Ensures the image fits well */
+    margin: 10px;
+}
+.about-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.profile-picture-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 14px;
+    margin-right: 30px;
+}
+.name-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: white;
+}
+.name-div {
+    border: 4px double rgb(144, 144, 144);
+}
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+}
