@@ -12,63 +12,328 @@
 </head>
 <body>
     <header>
-        <div class="name-column">
-            <div class="name-div">
-                <h1>Jeremias Lukas Aechtner</h1>
-                <p>Software Engineer | Hobby Musician</p>
-                <nav class="content-nav">
-                    <a href="#interests">Interests</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-            </div>
-        </div>
-        <div class="about-column">
-            <div class="profile-picture-container">
-                <div>
-                    <img class="profile-picture" src="./red(1).jpg" alt="Profile Picture 1">
-                    <img class="profile-picture" src="./black(1).jpg" alt="Profile Picture 2">
+        <div class="start-page-upper">
+            <div class="name-column">
+                <div class="name-div">
+                    <h1>Jeremias Lukas Aechtner</h1>
+                    <p>Software Engineer</p>
+                    <nav class="content-nav">
+                        <a href="#projects">Projects</a>
+                        <a href="#interests">Interests</a>
+                        <a id="change-contact">Contact</a>
+                    </nav>
                 </div>
             </div>
-            <div class="about-container">
-                <div>
-                    Hello!
-                    <p>I am an inerested and open hearted person.</p>
+            <div class="about-column">
+                <div class="profile-picture-container">
+                    <div>
+                        <img class="profile-picture" src="./red(1).jpg" alt="Profile Picture 1">
+                        <img class="profile-picture" src="./black(1).jpg" alt="Profile Picture 2">
+                    </div>
+                </div>
+                <div class="about-container">
+                    <div class="about-text">
+                        Hello!
+                        <p>
+                        My name is Jeremias. I'm a software engineer and this is my portfolio.
+                        Below, you'll find more about me and the projects I've contributed to,
+                        showcasing how my work has made an impact!
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="start-page-lower">
+            <div class="scroll-arrow"></div>
+        </div>
+
     </header>
 
     <body>
-    <section id="interests">
-        <h2>Interests</h2>
-        <ul>
-            <li>current technologcial innovations</li>
-            <li>piano since 18 years</li>
-            <li>stock market since 5 years</li>
-            <li>violin new</li>
-            <li>chess since 4 years</li>
-            <li>poker since 4 years</li>
-            <li>entrepreneurship since 3 years</li>
-        </ul>
-    </section>
     <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="section-headline">Projects</h2>
         <ul>
-            <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-            <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-        </ul>
+            <li>
+                <span class="big-text">
+                    Bachelor's Thesis about the use of AI in trading, especially in
+                    predicting price changes in the stock market</span>
+                <hr>
+                <span class="description">
+                    I'm currently writing my bachelor's thesis.
+                    The project consists of doing research about how AI can be used in trading.
+                    The second step of the project is to research which model architecture would best
+                    suit the purpose of predicting stock price changes. The third step is to implement
+                    such a model, train it on historical data and verify the predicitons. A comprehensive analysis
+                    and processing of the results will represent the conclusion of my work.
+                    
+                    technologies I plan to use: Github, VSCode, Alpaca API, python (numpy, pandas, alpaca-trade-api, sklearn,
+                    TensoFlow, Scikit-Learn, PyTorch, matplotlib, seaborn)
+                </span>
+            </li>
+            <li>
+                <span class="big-text">This portfolio website</span>
+                <hr>
+                <span class="description">
+                    I designed and implemented this portfolio website.
+                    <br><br>
+                    Used technologies: VSCode, Git, Github, HTML, CSS, JavaScript
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Fullstack Web Application as part of a university project</span>
+                <hr>
+                <span class="description">
+                    I was the DevOps engineer.
+                    We were a team of 7 and we divided the responsibilities evenly during our first meeting.
+                    Our task was to build a website for the department of mathematics and computer science.
+                    This website is designed for students who passed modules at other universities
+                    and want to have them credited towards their studies.
+                    
+                    My first task was to build the gitlab pipeline for a continuos integration and a continuos
+                    deployment. Our website should always be deployed to a virtual machine on the university
+                    servers. I maintained the pipeline through the whole development process which led to adding
+                    a couple of things later on like unit tests. Furthermore I was responsible to create the
+                    docker images which we would use. We used 3 container, one for the frontend, one for the
+                    backend and one for the database. Furthermore I added docker compose to the project to keep
+                    the containers orchestrated properly. Later in the process I joined the frontend team and
+                    took on tasks like adding buttons that provide different languages for the whole Web Application or
+                    graphical design of modules.
+                    
+                    This project was a lot of fun and one of the more extensive endeavors. Besides technological things,
+                    a big learning for me was, to use the benefit of properly planing my work and especially the workload.
+                    What happened was that, after I had a lot of initial work setting up the pipeline, environment variables
+                    and docker containers, I felt a bit underwhelmed after that. That's why I joined the frontend team,
+                    which was a more spontanous initiative on my part. If I had known about the workload distribution of
+                    a DevOps engineer, I would have been able to plan ahead and already have tasks for when the initial work is done.
+                    <br><br>
+                    Used technologies: Git, Gitlab, Ubuntu, VSCode, Docker, Docker Compose, Gitlab CI/CD, SpringBoot,
+                    Java, JUnit, REST API, SQL, postgreSQL, Java, Javascript, Vue.js, Vue Router, several npm packages
+                </span>
+            </li>
+            <li>
+                <span class="big-text">One year work experience at ipoque - a Rohde & Schwarz company</span>
+                <hr>
+                <span class="description">
+                    During my studies I had the chance to experience the job as a software engineer.
+                    I was a working student for a great company who is part of a global group - the Rohde & Schwarz group.
+                    From day one I had a mentor guiding me and helping me whenever I needed advice.
+                    It was a very convenient first working experience for me to make. It gave me the opportunity
+                    to learn a lot about technologies and bigger scale software projects, Office atmosphere and communication,
+                    and self directed working. I worked on different projects, all about analyzing data traffic using
+                    advanced algorithms and creative approaches. I signed a NDA so I cant go further in detail here.
+                    <br><br>
+                    Used technologies: Git, Gitlab, Gitlab CI/CD, Ubuntu, VSCode, Eclipse, TCP/IP
+                    unit tests (using C check framwork), debugging C code(using gdb), wireshark, Docker
+                    <br>
+                    Programming Languages: Java, Python, C (Unit tests with Check framework)
+
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Hackathon from a private company - Minship</span>
+                <hr>
+                <span class="description">
+                    This Weekend was one of those with little sleep and a lot of brainpower.
+                    The Hackathon began on Friday afternoon with a little welcoming and detailed briefing.
+                    We then were divided into groups of three and tasked with coming up with a solution
+                    to help the company prevent man-in-the-middle attacks when receiving and paying invoices
+                    from their service providers. Our solution was to create a verified list of service providers
+                    with their bank details. So only when a service provider sends an invoice for the first time
+                    or when the service providers bank details change an extended verification of the new details
+                    using google authenticator is required. Having a well-designed and working solution implemented
+                    by the end of the weekend, earned our group a decent reward and a job offer.
+                    <br><br>
+                    Used technologies: Git, Github, Google authenticator, Java, python, postgreSQL
+                </span>
+            </li>
+            <li>
+                <span class="big-text">To build and program a robot</span>
+                <hr>
+                <span class="description">
+                    In high school I was a member of the "Zuseum society".
+                    It is a society around Konrad Zuse - the creator of the first fully functional computer.
+                    The society has a lot of tools and devices to build, invent and craft things.
+                    We did a lot of things like over and over again maintaining an old model railway,
+                    printing 3D objects like chess figures and building a LED ping pong detection.
+                    In one of the biggest projects we undertook, we built a robot with wheels, a motor,
+                    a battery and a super sonic sensor. We later wrote code for the robot in
+                    Arduino (based on C/C++) so that it keeps driving and just stops when
+                    an obstacle is near.
+                    <br><br>
+                    Used technologies: Arduino (C/C++), 3D printing and modeling
+                </span>
+            </li>
+            <li>
+                <span class="big-text">secured communication channel between two people</span>
+                <hr>
+                <span class="description">
+                    During high school we had first contact with cyber security principles like encryption and secure channels.
+                    In our free time a friend of mine and I established a secure communication channel between us
+                    using public key encryption and experimenting with other ways of encryption. This was very interesting
+                    and gave me first hands on experience in the area of cyber security which I would deepen later in my studies.
+                    
+                    Used technologies: Kleopatra(Gpg4win)
+                </span>
+            </li>
+        </ul>        
+    </section>
+    <section id="interests">
+        <h2 class="section-headline">Interests</h2>
+        <ul>
+            <li>
+                <span class="big-text">Piano</span>
+                <hr>
+                <span class="description">
+                    I love to play the piano.
+                    I have been playing the piano since I was 5 years old and had a teacher until I was 18 years old.
+                    Now I improve my skills and knowledge on my own using Information I got during my classes.
+                    I'm constantly working on new pieces, to expand my repertoire.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Sports</span>
+                <hr>
+                <span class="description">
+                    I love to do sports. We all know it keeps you fit and healthy.
+                    That's why sport has been a part of my life since it started. I was playing a lot of
+                    table tennis at a young age. I played it every school break in primary school and I was
+                    in a club for 8 years during high school. When I was able to stand I learned to ski.
+                    Since then, being on the slopes has become an annual highlight. Later, I transitioned
+                    to snowboarding, which I enjoyed even more.
+                    During my time in college, I participated in various kinds of sports. I did Kick Boxing
+                    for more than one year. I tried Badminton, water polo, break dance and
+                    I was in a climbing club for 2 years. 
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Innovation</span>
+                <hr>
+                <span class="description">
+                    I'm highly interested in current developments in different areas of humanity.
+                    I'm fascinated by the fact that humanity over and over again is capable of
+                    doing things that no human could have done before. What interests me most are
+                    novelties in tech because they have such a huge impact on our life. I'm staying
+                    up to date with reading newsletters in the area of tech. Besides that I'm
+                    constantly involved in latest tools like chatGPT or copilot,
+                    increasing my work efficiency.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Stock Market</span>
+                <hr>
+                <span class="description">
+                    At a young age I already learned a lot about the stock market.
+                    especially in my family we had a lot of talks about stocks and market dynamics.
+                    I have been fascinated by this topic and its relevance ever since. Since the beginning of 2022
+                    I have been invested and because of that always up to date with with current market situations
+                    and geopolitical conditions and relations.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Violin</span>
+                <hr>
+                <span class="description">
+                    In 2025 I started to play the violin.
+                    It's a fascinating instrument, because not like the piano,
+                    you have to find the right tone on a scale. Having a strong theoretical and practical
+                    knowledge about music, let's me make progress quite quick.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Chess</span>
+                <hr>
+                <span class="description">
+                    What's there better than sitting down with a good friend and play a solid round of chess.
+                    I'm a member of the College Chess club and I love to immersing myseld in tactics and moves.
+                </span>
+            </li>
+        </ul>        
     </section>
     <section id="skills">
-        <h2>skills</h2>
+        <h2 class="section-headline">Soft Skills</h2>
         <ul>
-            <li>norwegian</li>
-            <li>problem solving</li>
+            <li>
+                <span class="big-text">Languages</span>
+                <hr>
+                <span class="description">
+                    Languages I know:
+                    norwegian (fluent in speaking and reading)
+                    english (fluent in speaking, writing and reading)
+                    german (mother tongue)
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Problem Solving</span>
+                <hr>
+                <span class="description">
+                    I approach the problem with a logical mindset and creativity, which allows me to find the root causes and most efficient and suitable solutions. I deepened this skill during various university projects and my work experience. The fact that identifying and analyzing problems is as fun to me as I’m good at it, is evidenced by my behavior in general. When it comes to games and riddles, I quickly find a sophisticated and efficient strategy to tackle the problem. Besides that, in situations where you go from A to B in the city and you for example have to pass by location C, D and E I would quickly figure out the overall shortest route to visit each location.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Adaptability</span>
+                <hr>
+                <span class="description">
+                    Adapting to new environments and surroundings is one of my strengths. During my work experience, I had an accelerating and fast start. getting used to new technologies and interfaces is always a quick thing for me and also the Erasmus stay shows, that I’m capable of quickly adapting to a new environment and tackle other challenges without much effort.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Time Management</span>
+                <hr>
+                <span class="description">
+                    As someone who has a strong plan for the own life and a vision of the own future, I learned to effectively plan ahead and schedule my tasks. I divide my time for different parts of my life to have a productive work environment. For me this leads to getting things done on time and maintaining a good work-life balance. I state that the greatest benefit of a good work-life balance is that in the time when you work you get in a state of 100% flow, where you focus on the task without any distraction.
+                </span>
+            </li>
+            <li>
+                <span class="big-text">Team work</span>
+                <hr>
+                <span class="description">
+                    If you come together with people every challenge becomes solvable. In this sentence, there are two important statements. First; to get together with people and second; to solve challenges. The first one was always a pleasure to me as I’m a communicative and outgoing person, as well as of a well behaved and respectful nature. The second statement talks about problem solving. As a group, the most important skill is to divide tasks and responsibilities in a way that allows you to trust each other’s competences and skills.
+                </span>
+            </li>
+        </ul>        
+    </section>
+    <section>
+        <h2 class="section-headline">Technologies I have worked with</h2>
+        <ul>
+            <div class="programming-languages">
+                <li class="section-caption">Programming Languages</li>
+                <li><span class="point">Java</span>: A lot of experience and deeper knowledge</li>
+                <li><span class="point">C++</span>: A lot of experience and deeper knowledge</li>
+                <li><span class="point">Python</span>: Various experience, mainly from working with data using pandas, missingno, sklearn, seaborn, and matplotlib</li>
+                <li><span class="point">C</span>: Various experience</li>
+                <li><span class="point">JavaScript</span>: Individual experience</li>
+            </div>
+    
+            <li><span class="point">Git</span>: A lot of experience with strong and deep knowledge</li>
+            <li><span class="point">Gitlab</span>: A lot of experience with strong and deep knowledge</li>
+            <li><span class="point">Ubuntu</span>: A lot of experience especially with bash shell</li>
+            <li><span class="point">Debugging</span>: Strong and comprehensive experience</li>
+            <li><span class="point">(Gitlab) CI/CD</span>: Strong and comprehensive experience</li>
+            <li><span class="point">SpringBoot</span>: Individual experience</li>
+            <li><span class="point">PostgreSQL</span>: Individual experience</li>
+            <li><span class="point">Docker</span>: Strong and deep knowledge</li>
+            <li><span class="point">Docker Compose</span>: Individual experience</li>
+            <li><span class="point">Machine Learning</span>: Wide experiences & strong knowledge (pandas, numpy, TensorFlow, Keras, sklearn, missingno, seaborn, matplotlib, Scikit-learn)</li>
+            <li><span class="point">ChatGPT/Copilot</span>: A lot of experience as useful tools</li>
+            <li><span class="point">Office Programs</span>: A lot of experience with strong and deep knowledge</li>
+            <li><span class="point">AWS</span>: Wide experiences and strong understanding</li>
+            <li><span class="point">Algorithms & Data Structures</span>: Advanced knowledge about algorithms & data structures and their efficiency</li>
+            <li><span class="point">Blender</span>: Individual experience and strong understanding</li>
+            <li><span class="point">HTML, CSS</span>: A lot of experience with strong and deep knowledge</li>
+            <li><span class="point">Cryptography/Security</span>: Wide experiences in different areas and strong knowledge</li>
+            <li><span class="point">Unit Testing</span>: Individual experience and strong understanding of the framework</li>
+            <li><span class="point">Web Development</span>: Numerous experiences and strong understanding of the technologies behind</li>
+            <li><span class="point">VS Code, Eclipse</span>: Strong experiences and knowledge with both</li>
+            <li><span class="point">Wireshark</span>: Wide experience and strong understanding</li>
+            <li><span class="point">REST APIs</span>: Individual experience and basic understanding</li>
+            <li><span class="point">Vue.js</span>: Individual experience and basic understanding</li>
+            <li><span class="point">Node.js</span>: Individual experience and basic understanding</li>
+            <li><span class="point">TCP/IP</span>: A lot of experience with strong and deep knowledge</li>
         </ul>
     </section>
     </body>
-    <footer>
-        Contact: <a href="https://www.linkedin.com/in/jeremias-lukas-aechtner-437a95264">LinkedIn</a>
+    <footer id="contact">
+        Contact:&nbsp;<a href="https://www.linkedin.com/in/jeremias-lukas-aechtner-437a95264" class="open-in-new-tab">LinkedIn</a>
     </footer>
 </body>
 </html>

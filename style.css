@@ -1,11 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(247, 247, 247);
+html {
+    scroll-behavior: smooth;
 }
 a {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
     text-decoration: none;
 }
 nav {
@@ -13,7 +13,7 @@ nav {
     margin: 1rem 0;
 }
 nav a {
-    margin: 0 1rem;
+    margin: 0 0rem;
     text-decoration: none;
     color: #007BFF;
 }

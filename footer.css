@@ -1,9 +1,11 @@
 footer {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background: #333;
     color: white;
     padding: 1rem;
-    width: 100%;
+    width: calc(100% - 2rem);
     bottom: 0;
 }
 footer a {

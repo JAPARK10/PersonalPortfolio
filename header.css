@@ -1,6 +1,7 @@
 header {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     gap: 10px;
     text-align: center;
     background: #333;
@@ -9,12 +10,39 @@ header {
     height: 100vh;
     box-sizing: border-box;
 }
+#change-contact {
+    width: inherit; /* Feste Breite */
+    height: inherit; /* Feste Höhe */
+    overflow: hidden; /* Verhindert, dass Inhalt überläuft */
+    text-align: center; /* Zentriert Text horizontal */
+    display: flex; /* Flexbox verwenden */
+    justify-content: center; /* Zentriert Inhalt horizontal */
+    align-items: center; /* Zentriert Inhalt vertikal */
+}
+#change-contact a {
+    text-decoration: none; /* Entfernt die Unterstreichung des Links */
+    color: inherit; /* Erbt die Textfarbe des Buttons */
+}
+.start-page-upper {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.start-page-lower {
+    display: flex;
+    justify-content: space-around;
+}
 .content-nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     background-color: #333; /* Hintergrundfarbe */
-    padding: 15px;
+    padding: 15px 45px;
 }
 .content-nav a {
     text-decoration: none;
@@ -43,8 +71,8 @@ header {
     gap: 10px; /* Space between the images */
     width: 140px; /* Adjust size as needed */
     height: 140px; /* Match width for a perfect circle */
-    border-radius: 10%; /* Makes the image circular */
-    border: 1.5px solid #2d2d2d; /* Optional border for emphasis */
+    border-radius: 30%; /* Makes the image circular */
+    border: 1.3px solid #2e2e2e; /* Optional border for emphasis */
     object-fit: cover; /* Ensures the image fits well */
     margin: 10px;
 }
@@ -74,4 +102,46 @@ header {
     flex-direction: column;
     justify-content: space-around;
     text-align: left;
+    max-width: 60%;
+}
+#button-link {
+    width: 40px; /* Feste Breite */
+    height: 30px; /* Feste Höhe */
+    overflow: hidden; /* Verhindert, dass Inhalt überläuft */
+    text-align: center; /* Zentriert Text horizontal */
+    display: flex; /* Flexbox verwenden */
+    justify-content: center; /* Zentriert Inhalt horizontal */
+    align-items: center; /* Zentriert Inhalt vertikal */
+    padding: 0 0;
+}
+#visit-my-linkedin {
+    padding: 10px 15px;
+}
+.welcome-screen {
+    position: relative;
+    height: 100vh;
+    background-color: #f0f0f0; /* or whatever background color you want */
+  }
+.scroll-arrow {
+position: absolute;
+bottom: 30px; /* Adjust the distance from the bottom */
+left: calc(50% - 5px);
+transform: translateX(-50%);
+width: 0;
+height: 0;
+border-left: 15px solid transparent; /* Left side of the V */
+border-right: 15px solid transparent; /* Right side of the V */
+border-top: 25px solid white; /* Bottom side of the V */
+animation: bounce 3s infinite; /* Optional: makes it bounce to attract attention */
+}
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-25%) translateY(0);
+}
+40% {
+    transform: translateX(-25%) translateY(-5px);
+}
+60% {
+    transform: translateX(-25%) translateY(-2.5px);
+}
 }

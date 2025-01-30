@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 247, 247);
+}
+body::-webkit-scrollbar {
+    display: none; /* Scrollbar ausblenden */
+}
+ul {
+    list-style: none; /* Remove default list dots */
+    padding: 0 0 0 2rem;
+    margin: 0;
+}
+li {
+    margin-bottom: 20px; /* Space between items */
+    max-width: 600px;
+}
+.big-text {
+    font-size: 1.5em; /* Make the word larger */
+    font-weight: bold;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* Horizontal line */
+    margin: 5px 0;
+}
+.description {
+    display: block;
+    font-size: 1em; /* Regular text size for the description */
+    color: #515151; /* You can adjust color to your preference */
+    margin-left: 2rem;
+    margin-bottom: 60px;
+}
+.section-headline {
+    font-size: 2.2em;
+    text-decoration: underline;
+}
+.point {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.programming-languages {
+    background-color: #f0f0f0; /* Light gray background for the group */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.programming-languages li {
+    margin: 5px 0; /* Less margin between items in the group */
+}
+.section-caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
