@@ -9,6 +9,7 @@ header {
     padding: 1rem;
     height: 100vh;
     box-sizing: border-box;
+    width: 100vw;
 }
 #change-contact {
     width: inherit; /* Feste Breite */
@@ -25,6 +26,7 @@ header {
 }
 .start-page-upper {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     gap: 10px;
     text-align: center;
@@ -48,9 +50,9 @@ header {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 100;
     padding: 10px 20px;
-    border: 1px solid white;
+    border: 0.1px solid white;
     border-radius: 1px;
     transition: all 0.1s ease;
 }
@@ -94,8 +96,8 @@ header {
     justify-content: space-around;
     border: white;
 }
-.name-div {
-    border: 4px double rgb(144, 144, 144);
+.me {
+    font-weight: 250;
 }
 .about-container {
     display: flex;
@@ -103,6 +105,7 @@ header {
     justify-content: space-around;
     text-align: left;
     max-width: 60%;
+    font-weight: 200;
 }
 #button-link {
     width: 40px; /* Feste Breite */
@@ -123,16 +126,28 @@ header {
     background-color: #f0f0f0; /* or whatever background color you want */
   }
 .scroll-arrow {
-position: absolute;
-bottom: 30px; /* Adjust the distance from the bottom */
-left: calc(50% - 5px);
-transform: translateX(-50%);
-width: 0;
-height: 0;
-border-left: 15px solid transparent; /* Left side of the V */
-border-right: 15px solid transparent; /* Right side of the V */
-border-top: 25px solid white; /* Bottom side of the V */
-animation: bounce 3s infinite; /* Optional: makes it bounce to attract attention */
+    position: relative;
+    width: 0;
+    height: 0;
+    /* Outer triangle: 5px left/right gives a total base width of 10px,
+       5px top gives a triangle height of 5px */
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid white;  /* Outline color */
+}
+.scroll-arrow::after {
+    content: "";
+    position: absolute;
+    /* Shift down by 1px to leave a border at the top */
+    top: -19px;
+    /* Offset left by 1px (5px - 4px) to center the inner triangle */
+    left: -11px;
+    width: 0;
+    height: 0;
+    /* Inner triangle is 1px smaller on each side to create a hollow effect */
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 16px solid #333;  /* Set this to your container’s background color */
 }
 @keyframes bounce {
 0%, 20%, 50%, 80%, 100% {

@@ -3,7 +3,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -14,7 +13,7 @@ body::-webkit-scrollbar {
 }
 ul {
     list-style: none; /* Remove default list dots */
-    padding: 0 0 0 2rem;
+    padding: 0 0 0 0rem;
     margin: 0;
 }
 li {
@@ -23,30 +22,39 @@ li {
 }
 .big-text {
     font-size: 1.5em; /* Make the word larger */
-    font-weight: bold;
+    font-weight: 300;
 }
 hr {
     border: 0;
     border-top: 1px solid #ccc; /* Horizontal line */
     margin: 5px 0;
+
 }
 .description {
     display: block;
-    font-size: 1em; /* Regular text size for the description */
+    font-size: 1.2em; /* Regular text size for the description */
+    font-weight: 300;
     color: #515151; /* You can adjust color to your preference */
-    margin-left: 2rem;
+    margin-left: 0.6rem;
     margin-bottom: 60px;
 }
 .section-headline {
-    font-size: 2.2em;
-    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4em;
+    font-weight: 200;
+    padding: 0 25px;
 }
 .point {
-    font-weight: bold;
-    text-decoration: underline;
+    font-weight: 400;
 }
 .programming-languages {
-    background-color: #f0f0f0; /* Light gray background for the group */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ff8888; /* Light gray background for the group */
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -55,7 +63,12 @@ hr {
     margin: 5px 0; /* Less margin between items in the group */
 }
 .section-caption {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 10px;
     font-size: 18px;
+}
+.other-technologies {
+    background-color: #88cfff;
+    padding: 15px;
+    border-radius: 5px;
 }

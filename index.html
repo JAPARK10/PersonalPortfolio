@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremias Lukas Aechtner - portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="body.css">
@@ -15,8 +16,8 @@
         <div class="start-page-upper">
             <div class="name-column">
                 <div class="name-div">
-                    <h1>Jeremias Lukas Aechtner</h1>
-                    <p>Software Engineer</p>
+                    <h1 class="me">Jeremias Lukas Aechtner</h1>
+                    <p class="me">Software Engineer</p>
                     <nav class="content-nav">
                         <a href="#projects">Projects</a>
                         <a href="#interests">Interests</a>
@@ -35,9 +36,9 @@
                     <div class="about-text">
                         Hello!
                         <p>
-                        My name is Jeremias. I'm a software engineer and this is my portfolio.
-                        Below, you'll find more about me and the projects I've contributed to,
-                        showcasing how my work has made an impact!
+                            This is a place where I would like to share what I do, my ideas, some bit of wit and most importantly
+                            a can do attitude. Have a look at what I'm doing!
+                            If you have thoughts or ideas, feel free to reach out to me.
                         </p>
                     </div>
                 </div>
@@ -59,74 +60,36 @@
                     predicting price changes in the stock market</span>
                 <hr>
                 <span class="description">
-                    I'm currently writing my bachelor's thesis.
-                    The project consists of doing research about how AI can be used in trading.
-                    The second step of the project is to research which model architecture would best
-                    suit the purpose of predicting stock price changes. The third step is to implement
-                    such a model, train it on historical data and verify the predicitons. A comprehensive analysis
-                    and processing of the results will represent the conclusion of my work.
-                    
-                    technologies I plan to use: Github, VSCode, Alpaca API, python (numpy, pandas, alpaca-trade-api, sklearn,
-                    TensoFlow, Scikit-Learn, PyTorch, matplotlib, seaborn)
+                    As my bachelor's thesis I am currently implementing a machine learning model
+                    that can predict price changes at the stock market with a heavy focus on sentiment
+                    analysis. Using a broad input of website scrapers I am able to analyze a general
+                    mood of the market that indicates next movements in the price.
                 </span>
             </li>
             <li>
-                <span class="big-text">This portfolio website</span>
+                <span class="big-text">This Website</span>
                 <hr>
                 <span class="description">
-                    I designed and implemented this portfolio website.
-                    <br><br>
-                    Used technologies: VSCode, Git, Github, HTML, CSS, JavaScript
+                    I designed this website as a digital gallery of my ventures.
                 </span>
             </li>
             <li>
                 <span class="big-text">Fullstack Web Application as part of a university project</span>
                 <hr>
                 <span class="description">
-                    I was the DevOps engineer.
-                    We were a team of 7 and we divided the responsibilities evenly during our first meeting.
-                    Our task was to build a website for the department of mathematics and computer science.
-                    This website is designed for students who passed modules at other universities
-                    and want to have them credited towards their studies.
-                    
-                    My first task was to build the gitlab pipeline for a continuos integration and a continuos
-                    deployment. Our website should always be deployed to a virtual machine on the university
-                    servers. I maintained the pipeline through the whole development process which led to adding
-                    a couple of things later on like unit tests. Furthermore I was responsible to create the
-                    docker images which we would use. We used 3 container, one for the frontend, one for the
-                    backend and one for the database. Furthermore I added docker compose to the project to keep
-                    the containers orchestrated properly. Later in the process I joined the frontend team and
-                    took on tasks like adding buttons that provide different languages for the whole Web Application or
-                    graphical design of modules.
-                    
-                    This project was a lot of fun and one of the more extensive endeavors. Besides technological things,
-                    a big learning for me was, to use the benefit of properly planing my work and especially the workload.
-                    What happened was that, after I had a lot of initial work setting up the pipeline, environment variables
-                    and docker containers, I felt a bit underwhelmed after that. That's why I joined the frontend team,
-                    which was a more spontanous initiative on my part. If I had known about the workload distribution of
-                    a DevOps engineer, I would have been able to plan ahead and already have tasks for when the initial work is done.
-                    <br><br>
-                    Used technologies: Git, Gitlab, Ubuntu, VSCode, Docker, Docker Compose, Gitlab CI/CD, SpringBoot,
-                    Java, JUnit, REST API, SQL, postgreSQL, Java, Javascript, Vue.js, Vue Router, several npm packages
+                    As a group of 5 we developed a full stack web application in which my role was
+                    to create and maintain the CI/CD pipeline as well as the docker containers for frontend,
+                    backend and database and the orchestration of those. Our client was a university that
+                    wanted to have a Web Application which a student can use to request crediting of credits
+                    for modules passed at other universities.
                 </span>
             </li>
             <li>
                 <span class="big-text">One year work experience at ipoque - a Rohde & Schwarz company</span>
                 <hr>
                 <span class="description">
-                    During my studies I had the chance to experience the job as a software engineer.
-                    I was a working student for a great company who is part of a global group - the Rohde & Schwarz group.
-                    From day one I had a mentor guiding me and helping me whenever I needed advice.
-                    It was a very convenient first working experience for me to make. It gave me the opportunity
-                    to learn a lot about technologies and bigger scale software projects, Office atmosphere and communication,
-                    and self directed working. I worked on different projects, all about analyzing data traffic using
-                    advanced algorithms and creative approaches. I signed a NDA so I cant go further in detail here.
-                    <br><br>
-                    Used technologies: Git, Gitlab, Gitlab CI/CD, Ubuntu, VSCode, Eclipse, TCP/IP
-                    unit tests (using C check framwork), debugging C code(using gdb), wireshark, Docker
-                    <br>
-                    Programming Languages: Java, Python, C (Unit tests with Check framework)
-
+                    I had the pleasure to be part of a company that focuses on the work with deep packet inspection
+                    communications and network analysis. I solved a lot of different problems around protocol communication
                 </span>
             </li>
             <li>
@@ -271,7 +234,7 @@
                 <span class="big-text">Languages</span>
                 <hr>
                 <span class="description">
-                    Languages I know:
+                    Languages that I know:
                     norwegian (fluent in speaking and reading)
                     english (fluent in speaking, writing and reading)
                     german (mother tongue)
@@ -308,42 +271,22 @@
         </ul>        
     </section>
     <section>
-        <h2 class="section-headline">Technologies I have worked with</h2>
+        <h2 class="section-headline">Technologies</h2>
         <ul>
             <div class="programming-languages">
-                <li class="section-caption">Programming Languages</li>
-                <li><span class="point">Java</span>: A lot of experience and deeper knowledge</li>
-                <li><span class="point">C++</span>: A lot of experience and deeper knowledge</li>
-                <li><span class="point">Python</span>: Various experience, mainly from working with data using pandas, missingno, sklearn, seaborn, and matplotlib</li>
-                <li><span class="point">C</span>: Various experience</li>
-                <li><span class="point">JavaScript</span>: Individual experience</li>
+                <div class="point">Java</div>
+                <div class="point">C++</div>
+                <div class="point">Python</div>
             </div>
-    
-            <li><span class="point">Git</span>: A lot of experience with strong and deep knowledge</li>
-            <li><span class="point">Gitlab</span>: A lot of experience with strong and deep knowledge</li>
-            <li><span class="point">Ubuntu</span>: A lot of experience especially with bash shell</li>
-            <li><span class="point">Debugging</span>: Strong and comprehensive experience</li>
-            <li><span class="point">(Gitlab) CI/CD</span>: Strong and comprehensive experience</li>
-            <li><span class="point">SpringBoot</span>: Individual experience</li>
-            <li><span class="point">PostgreSQL</span>: Individual experience</li>
-            <li><span class="point">Docker</span>: Strong and deep knowledge</li>
-            <li><span class="point">Docker Compose</span>: Individual experience</li>
-            <li><span class="point">Machine Learning</span>: Wide experiences & strong knowledge (pandas, numpy, TensorFlow, Keras, sklearn, missingno, seaborn, matplotlib, Scikit-learn)</li>
-            <li><span class="point">ChatGPT/Copilot</span>: A lot of experience as useful tools</li>
-            <li><span class="point">Office Programs</span>: A lot of experience with strong and deep knowledge</li>
-            <li><span class="point">AWS</span>: Wide experiences and strong understanding</li>
-            <li><span class="point">Algorithms & Data Structures</span>: Advanced knowledge about algorithms & data structures and their efficiency</li>
-            <li><span class="point">Blender</span>: Individual experience and strong understanding</li>
-            <li><span class="point">HTML, CSS</span>: A lot of experience with strong and deep knowledge</li>
-            <li><span class="point">Cryptography/Security</span>: Wide experiences in different areas and strong knowledge</li>
-            <li><span class="point">Unit Testing</span>: Individual experience and strong understanding of the framework</li>
-            <li><span class="point">Web Development</span>: Numerous experiences and strong understanding of the technologies behind</li>
-            <li><span class="point">VS Code, Eclipse</span>: Strong experiences and knowledge with both</li>
-            <li><span class="point">Wireshark</span>: Wide experience and strong understanding</li>
-            <li><span class="point">REST APIs</span>: Individual experience and basic understanding</li>
-            <li><span class="point">Vue.js</span>: Individual experience and basic understanding</li>
-            <li><span class="point">Node.js</span>: Individual experience and basic understanding</li>
-            <li><span class="point">TCP/IP</span>: A lot of experience with strong and deep knowledge</li>
+            <div class="other-technologies">
+                <li><span class="point">Web Development</span></li>
+                <li><span class="point">TCP/IP</span></li>
+                <li><span class="point">Network communications</span></li>
+                <li><span class="point">communication protocols</span></li>
+                <li><span class="point">Data Preprocessing</span></li>
+                <li><span class="point">Data analysis</span></li>
+                <li><span class="point">Machine Learning</span></li>
+            </div>
         </ul>
     </section>
     </body>
