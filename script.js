@@ -48,3 +48,23 @@ document.getElementById("change-contact").addEventListener("click", function () 
 
 
 });
+const details = document.getElementById('myDetails');
+const summary = details.querySelector('summary');
+
+// Listen for the native toggle event on <details>
+details.addEventListener('toggle', () => {
+summary.textContent = details.open ? 'Collapse' : 'Unfold Abstract';
+});
+const details_collapsible = document.querySelector('.collapsible');
+const content = details_collapsible.querySelector('.content');
+
+details_collapsible.addEventListener('toggle', () => {
+if (details_collapsible.open) {
+    const height = content.scrollHeight;
+    content.style.height = height + "px";
+    setTimeout(() => content.style.height = "auto", 300); // reset after animation
+} else {
+    content.style.height = content.scrollHeight + "px"; // set fixed height first
+    requestAnimationFrame(() => content.style.height = "0px");
+}
+});
