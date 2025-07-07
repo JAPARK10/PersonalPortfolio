@@ -9,7 +9,7 @@ document.getElementById("change-contact").addEventListener("click", function () 
     const link = document.createElement("a");
     link.href = "https://www.linkedin.com/in/jeremias-lukas-aechtner-437a95264";
     link.target = "_blank"; // Open in a new tab
-    link.textContent = "Visit my LinkedIn!"; // New content
+    link.textContent = "LinkedIn ->"; // New content
     link.id = "visit-my-linkedin"; // Copy button's classes if needed
     const oldWidth = this.offsetWidth;
     console.log(oldWidth);
