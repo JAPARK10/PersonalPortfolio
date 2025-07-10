@@ -9,32 +9,32 @@ body {
     background-color: rgb(247, 247, 247);
 }
 body::-webkit-scrollbar {
-    display: none; /* Scrollbar ausblenden */
+    display: none; 
 }
 ul {
-    list-style: none; /* Remove default list dots */
+    list-style: none;
     padding: 0 0 0 0rem;
     margin: 0;
 }
 li {
-    margin-bottom: 20px; /* Space between items */
+    margin-bottom: 20px; 
     max-width: 600px;
 }
 .big-text {
-    font-size: 1.5em; /* Make the word larger */
+    font-size: 1.5em; 
     font-weight: 300;
 }
 hr {
     border: 0;
-    border-top: 1px solid #ccc; /* Horizontal line */
+    border-top: 1px solid #ccc; 
     margin: 5px 0;
 
 }
 .description {
     display: block;
-    font-size: 1.2em; /* Regular text size for the description */
+    font-size: 1.2em;
     font-weight: 300;
-    color: #515151; /* You can adjust color to your preference */
+    color: #515151; 
     margin-left: 0.6rem;
     margin-bottom: 60px;
 }
@@ -54,14 +54,14 @@ hr {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #2a9d8f; /* Light gray background for the group */
+    background-color: #2a9d8f; 
     color: white;
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
 .programming-languages li {
-    margin: 5px 0; /* Less margin between items in the group */
+    margin: 5px 0; 
 }
 .section-caption {
     font-weight: 500;
@@ -88,11 +88,11 @@ hr {
     color: white;
 }
 .description .inline-link svg {
-    width: 0.9em;         /* scales with font size */
+    width: 0.9em;         
     height: 0.9em;
     margin-left: 0.25em;
-    vertical-align: text-bottom; /* aligns better with text */
-    fill: currentColor;   /* inherits text color */
+    vertical-align: text-bottom; 
+    fill: currentColor;  
 }
 .link-row {
     display: flex;
@@ -122,14 +122,14 @@ details:hover {
     box-shadow: inset 0 0 14px 8px rgba(0, 0, 0, 0.08);
 }
 summary {
-    list-style: none;              /* remove default marker */
+    list-style: none;
     cursor: pointer;
     padding: 1rem;
     display: flex;
     align-items: center;
     user-select: none;
 }
-/* Custom “plus” icon */
+
 summary::before {
     content: "+";
     flex-shrink: 0;
@@ -162,7 +162,7 @@ details[open] .content {
     display: flex;
     align-items: stretch;
     width: 100%;
-    height: 20px; /* or any height you want */
+    height: 20px; 
     background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -186,4 +186,23 @@ details[open] .content {
 }
 .empty-content {
     flex: 1;
+}
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video-container a {
+    display: block;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #515151; 
+    max-width: 300px;
+    max-height: 169px;
+}
+.video {
+    border: 1.5px solid rgb(66, 66, 66);
+    border-radius: 5px;
 }
