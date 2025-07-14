@@ -38,6 +38,9 @@ hr {
     margin-left: 0.6rem;
     margin-bottom: 60px;
 }
+.description a {
+    font-size: 1.4em;
+}
 .section-headline {
     display: flex;
     flex-direction: column;
@@ -193,10 +196,10 @@ details[open] .content {
     align-items: center;
     justify-content: center;
 }
-.video-container a {
+.video-container .video-title {
     display: block;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
     color: #515151; 
     max-width: 300px;

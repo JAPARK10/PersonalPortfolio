@@ -149,6 +149,11 @@ header {
     border-right: 11px solid transparent;
     border-top: 16px solid #333;  /* Set this to your container’s background color */
 }
+.can-do {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-style: bold;
+}
 @keyframes bounce {
 0%, 20%, 50%, 80%, 100% {
     transform: translateX(-25%) translateY(0);
