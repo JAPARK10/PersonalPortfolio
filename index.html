@@ -247,17 +247,15 @@
                     I kept learning new techniques, instruments like the ukulele, the trombone and the violin.
                     It's such a beautiful skill and hobby at the same time. 
                 </span>
-                <div class="video-container"> 
-                    <a class="video-title">
-                        Blues Improvisation
-                    </a>
-                    <iframe
-                        width="300" height="169" class="video"
-                        src="https://www.youtube.com/embed/-uB6Kxr-nik?rel=0&modestbranding=1"
-                        frameborder="0"
-                        allow="autoplay; encrypted-media"
-                        allowfullscreen>
-                    </iframe>
+                <div class="video-container">
+                    <a class="video-title">Blues Improvisation</a>
+
+                    <div class="video-placeholder" onclick="loadVideo(this)" style="cursor: pointer; position: relative; width: 300px; height: 169px; background-color: #000;">
+                        <img src="https://img.youtube.com/vi/-uB6Kxr-nik/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            <button style="padding: 10px 20px; background-color: white; border: none; font-weight: bold;">accept cookies and load video</button>
+                        </div>
+                    </div>
                 </div>
             </li>
             <li>
@@ -349,6 +347,17 @@
                     <div class="accent-bar-softskills"></div>
                     <div class="empty-content"></div>
                 </div>
+                <span class="big-text">Optimization</span>
+                <hr>
+                <span class="description">
+                    Optimization can be described surprisingly easy. It is just about optimizing a particular value. When it comes to processes it might be the time of execution which is to be optimized. When it comes to accuracy and precision of algorithms then other variables need to be optimized. It is easy to say which variables need to be optimized. The interesting part is: how do you do it? Well lucky guessing is somewhat a start but more strategical approaches like Bayesian optimization can reduce the time needed for optimizing dramatically. The idea here is to get creative and ask “Is there only one optimal context of variables for my algorithm? How can I from previous tuning and broader domain knowledge conclude to an optimal set of parameters?”
+                </span>
+            </li>
+            <li>
+                <div class="decorated-box">
+                    <div class="accent-bar-softskills"></div>
+                    <div class="empty-content"></div>
+                </div>
                 <span class="big-text">Adaptability</span>
                 <hr>
                 <span class="description">
@@ -390,13 +399,14 @@
             </div>
                 Other Technologies:
             <div class="other-technologies">
-                <li><span class="point">Machine Learning, Data Preprocessing, Data analysis/visualization</span></li>
+                <li><span class="point">Machine Learning (pandas, scikit-learn, keras, tensorflow, optuna, xgboost)</span></li>
+                <li><span class="point">Data Preprocessing, Data analysis/visualization (matplotlib)</span></li>
                 <li><span class="point">CI/CD, Docker, Docker Compose</span></li>
                 <li><span class="point">AI-Assisted Development, Copilot, ChatGPT</span></li>
                 <li><span class="point">Git, GitLab, GitHub, versioning</span></li>
                 <li><span class="point">Web Development</span></li>
                 <li><span class="point">TCP/IP, network protocols, UDP</span></li>
-                <li><span class="point">Linux</span></li>
+                <li><span class="point">Linux, UNIX</span></li>
             </div>
         </ul>
     </section>
