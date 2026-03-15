@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,19 @@
     <link rel="stylesheet" href="footer.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="start-page-upper">
             <div class="name-column">
-                <div class="name-div">
-                    <h1 class="me">Jeremias Lukas Aechtner</h1>
-                    <p class="me">Computer Science Student & Hobby musician</p>
-                    <nav class="content-nav">
-                        <a href="#projects">Projects</a>
-                        <a href="#interests">Interests</a>
-                        <a id="change-contact">Contact</a>
-                    </nav>
-                </div>
+                <h1 class="me">Jeremias Lukas Aechtner</h1>
+                <p>Computer Science Student & Hobby musician</p>
+                <nav class="content-nav">
+                    <a href="#projects">Projects</a>
+                    <a href="#interests">Interests</a>
+                    <a href="https://www.linkedin.com/in/jeremias-lukas-aechtner-437a95264" target="_blank"
+                        rel="noopener noreferrer">LinkedIn -></a>
+                </nav>
             </div>
             <div class="about-column">
                 <div class="profile-picture-container">
@@ -32,386 +33,467 @@
                         <img class="profile-picture" src="./images/grey_background.jpg" alt="Profile Picture 2">
                     </div>
                 </div>
-                <div class="about-container">
-                    <div class="about-text">
-                        Hello!
-                        <p>
-                            This is a place where I like to share my endeavors, ideas, and a bit of wit. But most importantly,
-                            a <span class="can-do">can-do</span> attitude! 
-                            <br>
-                            Are you ready for enough energy to power a small data center? Then have a look at what I'm doing!
-                            <br><br>
-                            Serious warning: <br>
-                            I might start explaining neural nets at parties.
-                        </p>
-                    </div>
+                <div class="about-text">
+                    Welcome
+                    <p>
+                        I like to share my endeavors, ideas, and a bit of wit.
+                        <br>
+                        But most importantly, I have a <span class="can-do">can-do</span> attitude!
+                        <br>
+                        Are you ready for enough energy to power a small data center?
+                        <br><br>
+                        Then have a look at what I'm
+                        doing!
+                    </p>
                 </div>
             </div>
         </div>
         <div class="start-page-lower">
             <div class="scroll-arrow"></div>
         </div>
-
     </header>
 
     <body>
-    <section id="projects">
-        <h2 class="section-headline">Projects</h2>
-        <ul>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">
-                    Comparative Study about forecasting
-                    performance of Machine Learning
-                    algorithms
-                    in forecasting stock prices of different
-                    volatility
-                </span>
-                <hr>
-                <span class="description">
-                    As my bachelor's thesis I was evaluating different machine learning algorithms based on their performance
-                    of forecasting stock prices across assets with different volatilities. 
-                    <br>
-                    <span class="link-row">
-                    <a href="https://github.com/JAPARK10/BachelorsThesis.git" target="_blank" rel="noopener noreferrer" class="inline-link">
-                    View the repository
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                        <polyline points="15 3 21 3 21 9" />
-                        <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                    </a>
-                        <a href="https://github.com/JAPARK10/BachelorsThesis/blob/03b1c4f5c880656a2cc65f9913798c3547d477ae/Thesis_LaTeX.pdf" target="_blank" rel="noopener noreferrer" class="inline-link">
-                        Read the report
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                            <polyline points="15 3 21 3 21 9" />
-                            <line x1="10" y1="14" x2="21" y2="3" />
-                        </svg>
-                    </a>
-                      
-                </span>
-                    <details class="collapsible" id="myDetails">
-                        <summary>Unfold Abstract</summary>
-                        <div class="content">
-                            <p>
-                                <span style="font-size: 1.5em;">Abstract</span><br>
-                                In the financial world various machine learning techniques are applied to different
-                                tasks. They are used to manage risk and predict price movements for every kind of
-                                asset. Forecasting accuracy as well as especiency thereby play a major role. Therefore
-                                in this thesis we wanted to evaluate the performance of three machine learning
-                                algorithms that were trained on stocks and ETFs with different volatility. This
-                                thesis compares their performance and investigates what impact the volatility in
-                                the training data has. The models we used are vanilla LSTM, CNN and XGBoost.
-                                A variety of technical and macro-economic indicators were added as features. The
-                                XGBoost model performed outstandingly. With approximately one hour execution
-                                time it was 32 times faster than the LSTM and about 4.5 times faster than the CNN
-                                model while having the best overall error. The LSTM is close behind the XGBoost
-                                in terms of predictive accuracy and the CNN has a much higher error. The thesis
-                                was aimed to show relations of predictive accuracy and certain characteristics in the
-                                data while focusing on the volatility as a characteristic. This can help to clarify
-                                strengths and weaknesses of certain models when applied to more or less volatile
-                                assets. Some further research questions are suggested in the end.
-                            </p>
-                        </div>
-                    </details>
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">DevOps Engineer for a university project</span>
-                <hr>
-                <span class="description">
-                    As a group of 5 we developed a full stack web application. As the DevOps responsible I
-                    created and maintained a CI/CD pipeline as well as a coherent docker infrastructure. Furthermore
-                    I was responsible for the deployment of the application to a Virtual Machine on the university server.
-                    The application is a web application that allows students to send application forms to the faculty about
-                    recognising modules from other universities.
-                    <br>
-                    <span class="link-row">
-                    <a href="https://github.com/JAPARK10/UniversityProject.git" target="_blank"
-                    rel="noopener noreferrer" class="inline-link">
-                    View the repository <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                            <polyline points="15 3 21 3 21 9" />
-                                            <line x1="10" y1="14" x2="21" y2="3" />
-                                        </svg>
-                    </a>
-                    </span>
-                </span>
-            </li>
-                        <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Visual & Acoustical Metronome</span>
-                <hr>
-                <span class="description">
-                    Everyone who wants to make music needs a good rhythm. Some have it in their blood, others need a little help.
-                    I designed and implemented a visual and acoustical metronome that helps you to keep the rhythm.
-                    I added the visual flashlight feature for people who are deaf and cant hear or also for people
-                    who like to make recordings and dont want any sound on the recording.
-                    <br>
-                    <span class="link-row">
-                    <a href="https://japark10.github.io/VisualMetronome/" target="_blank"
-                    rel="noopener noreferrer" class="inline-link">
-                    Visit the website <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                            <polyline points="15 3 21 3 21 9" />
-                                            <line x1="10" y1="14" x2="21" y2="3" />
-                                        </svg>
-                    </a>
-                    <a href="https://github.com/JAPARK10/VisualMetronome" target="_blank"
-                    rel="noopener noreferrer" class="inline-link">
-                    View the repository <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                            <polyline points="15 3 21 3 21 9" />
-                                            <line x1="10" y1="14" x2="21" y2="3" />
-                                        </svg>
-                    </a>
-                    </span>
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Student Employment at ipoque - a Rohde & Schwarz company</span>
-                <hr>
-                <span class="description">
-                    During this fantastic time of cooperation with ipoque I was able to design and implement data workflows
-                    to visualize network traffic data. Besides enjoying the company of my colleagues, I also implemented unit tests
-                    for new features. I always took care of the code quality, maintainability and documentation.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Hackathon from a private company - Minship</span>
-                <hr>
-                <span class="description">
-                    For one exciting weekend I participated in a hackathon organized by Minship.
-                    The goal was to design and implement a solution for online identification.
-                    We implemented a web application that invoked the Google authenticator.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">To build and program a robot</span>
-                <hr>
-                <span class="description">
-                    In high school I built and programmed a robot that was able to move around and avoid obstacles using a super sonic sensor.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">design and Implement games</span>
-                <hr>
-                <span class="description">
-                    Coming from my childhood passion for video games, I started to design and implement games.
-                    I really enjoyed geting into the logic behind simple games like snake, tetris and space invader.
-                    I also implemented a more complex 2D jump and run game.
-                </span>
-            </li>
-            
-        </ul>        
-    </section>
-    <section id="interests">
-        <h2 class="section-headline">Interests</h2>
-        <ul>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-interests"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Music, composing, Piano, Violin</span>
-                <hr>
-                <span class="description">
-                    I love to make music... since 18 years. I started playing the piano at the age of 5. 
-                    I kept learning new techniques, instruments like the ukulele, the trombone and the violin.
-                    It's such a beautiful skill and hobby at the same time. 
-                </span>
-                <div class="video-container">
-                    <a class="video-title">Blues Improvisation</a>
-
-                    <div class="video-placeholder" onclick="loadVideo(this)" style="cursor: pointer; position: relative; width: 300px; height: 169px; background-color: #000;">
-                        <img src="https://img.youtube.com/vi/-uB6Kxr-nik/hqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
-                            <button style="padding: 10px 20px; background-color: white; border: none; font-weight: bold;">accept cookies and load video</button>
-                        </div>
+        <section id="projects">
+            <h2 class="section-headline">Projects</h2>
+            <ul>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-interests"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Sports</span>
-                <hr>
-                <span class="description">
-                    Having a counter side to heavy mental work is important to me.
-                    I love to do sports, especially Kite surfing, Snowboarding, Hiking and working out.
-                    I have tried so many different sports, for example, badminton, spike ball, Kick-Boxing, chess, football,
-                    basketball, volleyball, table tennis and a whole lot more. 
-                    The most intense discipline I have ever tried was having siblings.
-                    Seriously: Pushing myself to a constantly rising bar is my main axiom.
-                </span>
-
-
-
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-interests"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Innovation</span>
-                <hr>
-                <span class="description">
-                    There is so incredibly much happening in the world of technology.
-                    I love to keep up with the latest trends and innovations.
-                    Especially in AI and Machine Learning, really every week some major headlines are made.
-                    This transition the whole world will be going through is so exciting.
-                    <br><br><br>
-                    <a>
-                        What a time to be alive!!!
-                    </a>
+                    <span class="description">
+                        <span class="big-text">
+                            Comparative Study about forecasting
+                            performance of Machine Learning
+                            algorithms
+                            in forecasting stock prices of different
+                            volatility
+                        </span>
+                        <hr>
+                        As my bachelor's thesis I was evaluating different machine learning algorithms based on
+                        their
+                        performance of forecasting stock prices across assets with different volatilities.
+                        <br>
+                        <details class="collapsible" id="myDetails">
+                            <summary>Unfold Abstract</summary>
+                            <div class="content">
+                                <p>
+                                    <span style="font-size: 1.5em;">Abstract</span><br>
+                                    In the financial world various machine learning techniques are applied to different
+                                    tasks. They are used to manage risk and predict price movements for every kind of
+                                    asset. Forecasting accuracy as well as especiency thereby play a major role.
+                                    Therefore
+                                    in this thesis we wanted to evaluate the performance of three machine learning
+                                    algorithms that were trained on stocks and ETFs with different volatility. This
+                                    thesis compares their performance and investigates what impact the volatility in
+                                    the training data has. The models we used are vanilla LSTM, CNN and XGBoost.
+                                    A variety of technical and macro-economic indicators were added as features. The
+                                    XGBoost model performed outstandingly. With approximately one hour execution
+                                    time it was 32 times faster than the LSTM and about 4.5 times faster than the CNN
+                                    model while having the best overall error. The LSTM is close behind the XGBoost
+                                    in terms of predictive accuracy and the CNN has a much higher error. The thesis
+                                    was aimed to show relations of predictive accuracy and certain characteristics in
+                                    the
+                                    data while focusing on the volatility as a characteristic. This can help to clarify
+                                    strengths and weaknesses of certain models when applied to more or less volatile
+                                    assets. Some further research questions are suggested in the end.
+                                </p>
+                            </div>
+                        </details>
+                        <div class="bachelor-layout">
+                            <div class="bachelor-main">
+                                <div class="bachelor-main-wrapper"
+                                    style="width: fit-content; display: flex; flex-direction: column; gap: 15px;">
+                                    <span class="link-row" style="justify-content: flex-start; width: 100%;">
+                                        <a href="https://github.com/JAPARK10/BachelorsThesis.git" target="_blank"
+                                            rel="noopener noreferrer" class="inline-link">
+                                            View the repository
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15 3 21 3 21 9" />
+                                                <line x1="10" y1="14" x2="21" y2="3" />
+                                            </svg>
+                                        </a>
+                                        <a href="https://github.com/JAPARK10/BachelorsThesis/blob/03b1c4f5c880656a2cc65f9913798c3547d477ae/Thesis_LaTeX.pdf"
+                                            target="_blank" rel="noopener noreferrer" class="inline-link">
+                                            Read the report
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15 3 21 3 21 9" />
+                                                <line x1="10" y1="14" x2="21" y2="3" />
+                                            </svg>
+                                        </a>
                                     </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-interests"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Stock Market</span>
-                <hr>
-                <span class="description">
-                    It all started when my father's aunt moved to america, married and started investing in the stock market.
-                    She sent my father letters where she told him how her life was like and what she did. 
-                    At that time there was no public opportunity to nvest in the stock market in germany.
-                    Right after germanys reunification, my father started investing in the stock market.
-                    He taught me a lot about the stock market and how to invest.
-                    Through that I developed a passion for the stock market, its benefits and its dynamics.
-                    End of story!
-                </span>
-            </li>
-        </ul>        
-    </section>
-    <section id="skills">
-        <h2 class="section-headline">Soft Skills</h2>
-        <ul>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Languages</span>
-                <hr>
-                <span class="description">
-                    Languages that I know:
-                    norwegian (fluent in speaking and reading)
-                    english (fluent in speaking, writing and reading)
-                    german (mother tongue)
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Problem Solving</span>
-                <hr>
-                <span class="description">
-                    I approach the problem with a logical mindset and creativity, which allows me to find the root causes and most efficient and suitable solutions. I deepened this skill during various university projects and my work experience. The fact that identifying and analyzing problems is as fun to me as I’m good at it, is evidenced by my behavior in general. When it comes to games and riddles, I quickly find a sophisticated and efficient strategy to tackle the problem. Besides that, in situations where you go from A to B in the city and you for example have to pass by location C, D and E I would quickly figure out the overall shortest route to visit each location.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Optimization</span>
-                <hr>
-                <span class="description">
-                    Optimization can be described surprisingly easy. It is just about optimizing a particular value. When it comes to processes it might be the time of execution which is to be optimized. When it comes to accuracy and precision of algorithms then other variables need to be optimized. It is easy to say which variables need to be optimized. The interesting part is: how do you do it? Well lucky guessing is somewhat a start but more strategical approaches like Bayesian optimization can reduce the time needed for optimizing dramatically. The idea here is to get creative and ask “Is there only one optimal context of variables for my algorithm? How can I from previous tuning and broader domain knowledge conclude to an optimal set of parameters?”
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Adaptability</span>
-                <hr>
-                <span class="description">
-                    Adapting to new environments and surroundings is one of my strengths. During my work experience, I had an accelerating and fast start. getting used to new technologies and interfaces is always a quick thing for me and also the Erasmus stay shows, that I’m capable of quickly adapting to a new environment and tackle other challenges without much effort.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Time Management</span>
-                <hr>
-                <span class="description">
-                    As someone who has a strong plan for the own life and a vision of the own future, I learned to effectively plan ahead and schedule my tasks. I divide my time for different parts of my life to have a productive work environment. For me this leads to getting things done on time and maintaining a good work-life balance. I state that the greatest benefit of a good work-life balance is that in the time when you work you get in a state of 100% flow, where you focus on the task without any distraction.
-                </span>
-            </li>
-            <li>
-                <div class="decorated-box">
-                    <div class="accent-bar-softskills"></div>
-                    <div class="empty-content"></div>
-                </div>
-                <span class="big-text">Team work</span>
-                <hr>
-                <span class="description">
-                    If you come together with people every challenge becomes solvable. In this sentence, there are two important statements. First; to get together with people and second; to solve challenges. The first one was always a pleasure to me as I’m a communicative and outgoing person, as well as of a well behaved and respectful nature. The second statement talks about problem solving. As a group, the most important skill is to divide tasks and responsibilities in a way that allows you to trust each other’s competences and skills.
-                </span>
-            </li>
-        </ul>        
-    </section>
-    <section>
-        <h2 class="section-headline">Technologies</h2>
-        <ul>
+                                    <img src="./images/Bachelor_Thesis_results_averaged.png"
+                                        alt="Bachelor Thesis Results Averaged" class="project-image"
+                                        style="width: 100%;">
+                                </div>
+                            </div>
+                            <div class="bachelor-side">
+                                <img src="./images/Bachelor_Thesis_results_combined.png"
+                                    alt="Bachelor Thesis Results Combined" class="project-image">
+                            </div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">DevOps Engineer for a university project</span>
+                    <hr>
+                    <span class="description">
+                        As a group of 5 we developed a full stack web application. As the DevOps responsible I
+                        created and maintained a CI/CD pipeline as well as a coherent docker infrastructure.
+                        As really my first Software Engineering project I was finding my way into collaborative teamwork
+                        and productive work.
+                        I was responsible for the deployment of the application to a Virtual Machine on the university
+                        server as part of the CI/CD pipeline.
+                    </span>
+                    <div class="full-width-images">
+                        <img src="./images/university_project_leipzig_01.png" alt="University Project Leipzig 01"
+                            class="project-image">
+                        <img src="./images/university_project_leipzig_02.png" alt="University Project Leipzig 02"
+                            class="project-image">
+                    </div>
+                    <span class="description">
+                        The application is a web application that allows students to send application forms to the
+                        faculty about recognizing modules passed at other universities. I made first experiences with
+                        balancing ownership of my code, teamwork and feedback, result driven development and continuous
+                        learning.
+                        <br>
+                        <span class="link-row">
+                            <a href="https://github.com/JAPARK10/UniversityProject.git" target="_blank"
+                                rel="noopener noreferrer" class="inline-link">
+                                View the repository <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Visual & Acoustical Metronome</span>
+                    <hr>
+                    <span class="description">
+                        Everyone who wants to make music needs a good rhythm. Some have it in their blood, others need a
+                        little help.
+                        I designed and implemented a visual and acoustical metronome that helps you to keep the rhythm.
+                        I added the visual flashlight feature for people who are deaf and cant hear or also for people
+                        who like to make recordings and dont want any sound on the recording.
+                        <br>
+                        <span class="link-row">
+                            <a href="https://japark10.github.io/VisualMetronome/" target="_blank"
+                                rel="noopener noreferrer" class="inline-link">
+                                Visit the website <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/JAPARK10/VisualMetronome" target="_blank"
+                                rel="noopener noreferrer" class="inline-link">
+                                View the repository <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </span>
+                    </span>
+                    <div class="project-image-container">
+                        <img src="./images/Metronome_screenshot.png" alt="Metronome Screen"
+                            class="project-image image-small">
+                    </div>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Student Employment at ipoque - a Rohde & Schwarz company</span>
+                    <hr>
+                    <span class="description">
+                        During this fantastic time of cooperation with ipoque I was able to design and implement data
+                        workflows
+                        to visualize network traffic data. Besides enjoying the company of my colleagues, I also
+                        implemented unit tests
+                        for new features. I always took care of the code quality, maintainability and documentation.
+                        <br>
+                        <span class="link-row">
+                            <a href="https://www.ipoque.com/" target="_blank" rel="noopener noreferrer"
+                                class="inline-link">
+                                Company website
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </span>
+                        <div class="project-image-container">
+                            <img src="./images/ipoque_tower.jpg" alt="Ipoque Tower" class="project-image image-medium">
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Hackathon from a private company - Minship</span>
+                    <hr>
+                    <span class="description">
+                        For one exciting weekend I participated in a hackathon organized by Minship.
+                        The goal was to design and implement a solution for online identification.
+                        We implemented a web application that invoked the Google authenticator.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">To build and program a robot</span>
+                    <hr>
+                    <span class="description">
+                        In high school I built and programmed a robot that was able to move around and avoid obstacles
+                        using a super sonic sensor.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">design and Implement games</span>
+                    <hr>
+                    <span class="description">
+                        Coming from my childhood passion for video games, I started to design and implement games.
+                        I really enjoyed geting into the logic behind simple games like snake, tetris and space invader.
+                        I also implemented a more complex 2D jump and run game.
+                    </span>
+                </li>
+
+            </ul>
+        </section>
+        <section id="interests">
+            <h2 class="section-headline">Interests</h2>
+            <ul>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-interests"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Music, composing, Piano, Violin</span>
+                    <hr>
+                    <span class="description">
+                        I love to make music... since 18 years. I started playing the piano at the age of 5.
+                        I kept learning new techniques, instruments like the ukulele, the trombone and the violin.
+                        It's such a beautiful skill and hobby at the same time.
+                    </span>
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="loadVideo(this)"
+                            style="cursor: pointer; position: relative; width: 300px; height: 169px; background-color: #000;">
+                            <img src="https://img.youtube.com/vi/-uB6Kxr-nik/hqdefault.jpg"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                                <button>accept cookies and load video</button>
+                            </div>
+                        </div>
+                        <a class="video-title">Blues Improvisation</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-interests"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Kickboxing</span>
+                    <hr>
+                    <span class="description">
+                        I do kickboxing regularly and enjoy the physical and mental challenge.
+                        For me Kickboxing is an opportunity of transcending my desire to fight for winning solutions in
+                        a physical way into the real world.
+                    </span>
+
+
+
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-interests"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Innovation</span>
+                    <hr>
+                    <span class="description">
+                        I am up to date with news in technology mainly in the areas of AI and Machine Learning.
+                        Furthermore I enjoy staying up to date with the developments of big companies such as Tesla
+                        including autonomous driving and SpaceX including Starlink internet and exploring the universe.
+                        <br><br><br>
+                        <a>
+                            What a time to be alive!
+                        </a>
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-interests"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Stock Market</span>
+                    <hr>
+                    <span class="description">
+                        My interest in the stock market started when my father's aunt moved to america, married and
+                        started investing in the
+                        stock market.
+                        My father received her letters in which she shared her life.
+                        Inspired by her my father started investing and reading about the stock market himself. That was
+                        difficult in Germany at the time.
+                        He taught me a lot about what he learned and strategies. We had endless talks.
+                        It is one great example of my ability to learn from others.
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2 class="section-headline">Soft Skills</h2>
+            <ul>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Languages</span>
+                    <hr>
+                    <span class="description">
+                        I had the opportunity to learn different languages including german as my native language,
+                        english and norwegian.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Problem Solving</span>
+                    <hr>
+                    <span class="description">
+                        I approach the problem with a logical mindset and creativity, which allows me to find the root
+                        causes and most efficient and suitable solutions. I deepened this skill during various
+                        university projects and my work experience. The fact that identifying and analyzing problems is
+                        as fun to me as I’m good at it, is evidenced by my behavior in general. When it comes to games
+                        and riddles, I quickly find a sophisticated and efficient strategy to tackle the problem.
+                        Besides that, in situations where you go from A to B in the city and you for example have to
+                        pass by location C, D and E I would quickly figure out the overall shortest route to visit each
+                        location.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Optimization</span>
+                    <hr>
+                    <span class="description">
+                        Optimization can be described surprisingly easy. It is just about optimizing a particular value.
+                        When it comes to processes it might be the time of execution which is to be optimized. When it
+                        comes to accuracy and precision of algorithms then other variables need to be optimized. It is
+                        easy to say which variables need to be optimized. The interesting part is: how do you do it?
+                        Well lucky guessing is somewhat a start but more strategical approaches like Bayesian
+                        optimization can reduce the time needed for optimizing dramatically. The idea here is to get
+                        creative and ask “Is there only one optimal context of variables for my algorithm? How can I
+                        from previous tuning and broader domain knowledge conclude to an optimal set of parameters?”
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Adaptability</span>
+                    <hr>
+                    <span class="description">
+                        Adapting to new environments and surroundings is one of my strengths. During my work experience,
+                        I had an accelerating and fast start. getting used to new technologies and interfaces is always
+                        a quick thing for me and also the Erasmus stay shows, that I’m capable of quickly adapting to a
+                        new environment and tackle other challenges without much effort.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Time Management</span>
+                    <hr>
+                    <span class="description">
+                        As someone who has a strong plan for the own life and a vision of the own future, I learned to
+                        effectively plan ahead and schedule my tasks. I divide my time for different parts of my life to
+                        have a productive work environment. For me this leads to getting things done on time and
+                        maintaining a good work-life balance. I state that the greatest benefit of a good work-life
+                        balance is that in the time when you work you get in a state of 100% flow, where you focus on
+                        the task without any distraction.
+                    </span>
+                </li>
+                <li>
+                    <div class="decorated-box">
+                        <div class="accent-bar-softskills"></div>
+                        <div class="empty-content"></div>
+                    </div>
+                    <span class="big-text">Team work</span>
+                    <hr>
+                    <span class="description">
+                        If you come together with people every challenge becomes solvable. In this sentence, there are
+                        two important statements. First; to get together with people and second; to solve challenges.
+                        The first one was always a pleasure to me as I’m a communicative and outgoing person, as well as
+                        of a well behaved and respectful nature. The second statement talks about problem solving. As a
+                        group, the most important skill is to divide tasks and responsibilities in a way that allows you
+                        to trust each other’s competences and skills.
+                    </span>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="section-headline">Technologies</h2>
+            <ul>
                 Languages:
-            <div class="programming-languages">
-                <div class="point">Python</div>
-                <div class="point">C++</div>
-                <div class="point">Java</div>
-            </div>
+                <div class="programming-languages">
+                    <div class="point">Python</div>
+                    <div class="point">C++</div>
+                    <div class="point">Java</div>
+                </div>
                 Other Technologies:
-            <div class="other-technologies">
-                <li><span class="point">Machine Learning (pandas, scikit-learn, keras, tensorflow, optuna, xgboost)</span></li>
-                <li><span class="point">Data Preprocessing, Data analysis/visualization (matplotlib)</span></li>
-                <li><span class="point">CI/CD, Docker, Docker Compose</span></li>
-                <li><span class="point">AI-Assisted Development, Copilot, ChatGPT</span></li>
-                <li><span class="point">Git, GitLab, GitHub, versioning</span></li>
-                <li><span class="point">Web Development</span></li>
-                <li><span class="point">TCP/IP, network protocols, UDP</span></li>
-                <li><span class="point">Linux, UNIX</span></li>
-            </div>
-        </ul>
-    </section>
+                <div class="other-technologies">
+                    <li><span class="point">Machine Learning (pandas, scikit-learn, keras, tensorflow, optuna,
+                            xgboost)</span></li>
+                    <li><span class="point">Data Preprocessing, Data analysis/visualization (matplotlib)</span></li>
+                    <li><span class="point">CI/CD, Docker, Docker Compose</span></li>
+                    <li><span class="point">AI-Assisted Development, Copilot, ChatGPT</span></li>
+                    <li><span class="point">Git, GitLab, GitHub, versioning</span></li>
+                    <li><span class="point">Web Development</span></li>
+                    <li><span class="point">TCP/IP, network protocols, UDP</span></li>
+                    <li><span class="point">Linux, UNIX</span></li>
+                </div>
+            </ul>
+        </section>
+        <footer id="contact">
+        </footer>
+        <div id="lightbox-overlay">
+            <span id="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="Expanded Image">
+        </div>
     </body>
-    <footer id="contact">
-    </footer>
-</body>
+
 </html>

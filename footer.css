@@ -2,13 +2,14 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background: #333;
-    color: white;
+    background: rgb(247, 247, 247);
+    color: #333;
     padding: 1rem;
     width: calc(100% - 2rem);
     bottom: 0;
 }
+
 footer a {
-    color: white;
+    color: #333;
     text-decoration: underline;
 }
