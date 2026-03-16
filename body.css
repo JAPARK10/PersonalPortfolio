@@ -359,15 +359,31 @@ details[open] .content {
 }
 
 .image-small {
-    max-width: none !important;
-    width: 250% !important;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 1800% !important;
+    height: auto;
 }
 
 .image-small:hover {
-    transform: translateX(-50%) scale(1.02);
+    transform: scale(1.02);
+}
+
+.metronome-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.metronome-layout .description {
+    margin-bottom: 0;
+    flex: 1;
+}
+
+.metronome-layout .project-image-container {
+    flex: 1;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .image-medium {
