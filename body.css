@@ -218,6 +218,12 @@ details[open] .content {
     background: linear-gradient(to bottom, rgb(241, 255, 93), #ff950b);
 }
 
+.accent-bar-luvable {
+    width: inherit;
+    height: 100%;
+    background: linear-gradient(to bottom, #00eeff, #5d00ff);
+}
+
 .empty-content {
     flex: 1;
 }
