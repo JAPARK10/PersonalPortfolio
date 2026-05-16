@@ -8,7 +8,7 @@ const summary = details.querySelector('summary');
 
 if (details && summary) {
     details.addEventListener('toggle', () => {
-        summary.textContent = details.open ? 'Collapse' : 'Unfold Abstract';
+        summary.textContent = details.open ? 'Abstract' : 'Abstract';
     });
 }
 
